@@ -1,4 +1,4 @@
-export const data = [{
+export const data = {
   "status": "ok",
   "totalResults": 1988,
   "articles": [
@@ -431,4 +431,4 @@ export const data = [{
   "publishedAt": "2023-05-30T10:16:55Z",
   "content": "Vamos a explicarte cómo saber si WhatsApp está usando tu cámara o micrófono sin que lo sepas, algo que es fácil de averiguar tanto en un móvil Android como un iPhone. Y decimos WhatsApp, pero con el … [+2805 chars]"
   }
-]}]
+]}
