@@ -1,0 +1,14 @@
+.article-card {
+  display: flex;
+  flex-direction: row;
+  max-height: 20em;
+  max-width: 65em;
+  border-bottom: 1px solid grey;
+}
+
+.article-card > img {
+  max-height: 10em;
+  max-width: 15em;
+  object-fit: contain;
+  margin: 1em;
+}
