@@ -11,15 +11,11 @@ export const HomePage = ({articles}) => {
     <section className="home-page">
       <header>
         <h1>Website Title</h1>
+        <Form />
       </header>
-      <section className="body">
-        <div className="form-container">
-          <Form />
-        </div>
-        <div className="card-container">
-          {cards}
-        </div>
-      </section>
+      <div className="card-container">
+        {cards}
+      </div>
     </section>
   )
 }

@@ -6,3 +6,13 @@
 .body {
   display: flex;
 }
+
+header {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
