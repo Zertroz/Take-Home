@@ -12,17 +12,17 @@ function App() {
   const [keyword, setKeyword] = useState('tech');
 
   const getArticles = async () => {
-    const call = await apiCall(keyword);
-    setArticles(call.articles)
+    // const call = await apiCall(keyword);
+    setArticles(data.articles);
   }
 
   useEffect(() => {
-    getArticles()
-  })
+    getArticles();
+  }, [keyword])
 
   return (
     <main>
-      <NavBar />
+      <NavBar setKeyword={setKeyword}/>
       <Route exact path='/' render={() => (<HomePage articles={articles}/>)} />
       <Route exact path='/article/:title' render={({match}) => (<DetailedPage title={match.params.title} articles={articles}/>)} />
     </main>

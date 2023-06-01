@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './ArticleCard.css'
 
 export const ArticleCard = ({title, description, date, image}) => {
-  const link = title.split(' ').slice(0, 4).join('-')
+  const link = title.slice(0, 30)
   
   return (
     <Link to={`/article/${link}`} className="article-card">

@@ -1,6 +1,8 @@
 export const DetailedPage = ({title, articles}) => {
-  const fixedTitle = title.split('-').join(' ')
+  const fixedTitle = title
   const selectedArticle = articles.find(article => article.title.includes(fixedTitle))
+
+  
 
   return (
     <section>
