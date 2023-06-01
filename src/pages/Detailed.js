@@ -1,9 +1,12 @@
+import { NavBar } from "../components/NavBar"
+
 export const DetailedPage = ({title, articles}) => {
   const fixedTitle = title.split('-').join(' ')
   const selectedArticle = articles.find(article => article.title.includes(fixedTitle))
 
   return (
     <section>
+      <NavBar />
       <h2>{selectedArticle.title}</h2>
       <h3>{selectedArticle.description}</h3>
       <p>By {selectedArticle.author}</p>
