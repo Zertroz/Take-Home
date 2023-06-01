@@ -4,16 +4,25 @@ import { DetailedPage } from './pages/Detailed';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { data } from './data/data';
+import { NavBar } from './components/NavBar';
+import { apiCall } from './apiCalls';
 
 function App() {
-  const [articles, setArticles] = useState(data.articles);
+  const [articles, setArticles] = useState([]);
+  const [keyword, setKeyword] = useState('tech');
+
+  const getArticles = async () => {
+    const call = await apiCall(keyword);
+    setArticles(call.articles)
+  }
 
   useEffect(() => {
-    setArticles(data.articles);
+    getArticles()
   })
 
   return (
     <main>
+      <NavBar />
       <Route exact path='/' render={() => (<HomePage articles={articles}/>)} />
       <Route exact path='/article/:title' render={({match}) => (<DetailedPage title={match.params.title} articles={articles}/>)} />
     </main>
