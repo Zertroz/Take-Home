@@ -1,6 +1,4 @@
 import { ArticleCard } from "../components/ArticleCard"
-import { Form } from "../components/Form"
-import { NavBar } from "../components/NavBar"
 import './Home.css'
 
 export const HomePage = ({articles}) => {
@@ -8,9 +6,7 @@ export const HomePage = ({articles}) => {
 
   return (
     <section className="home-page">
-      <NavBar />
       <div className="card-container">
-        <Form />
         {cards}
       </div>
     </section>
