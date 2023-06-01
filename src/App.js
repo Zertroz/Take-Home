@@ -12,11 +12,10 @@ function App() {
     setArticles(data.articles);
   })
 
-
   return (
     <main>
-      <Route path='/' render={() => (<HomePage articles={articles}/>)} />
-      <Route path='/article/:id' render={() => (<DetailedPage />)} />
+      <Route exact path='/' render={() => (<HomePage articles={articles}/>)} />
+      <Route exact path='/article/:title' render={({match}) => (<DetailedPage title={match.params.title} articles={articles}/>)} />
     </main>
   );
 }
