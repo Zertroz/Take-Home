@@ -1,12 +1,12 @@
-import { useState } from "react"
-import './Form.css'
+import { useState } from "react";
+import './Form.css';
 
 export const Form = ({setKeyword}) => {
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState('');
 
   const submitSearch = (e) => {
-    e.preventDefault()
-    setKeyword(search)
+    e.preventDefault();
+    setKeyword(search);
   }
 
   return (
@@ -14,5 +14,5 @@ export const Form = ({setKeyword}) => {
       <input type='text' value={search} placeholder="Search" onChange={e => setSearch(e.target.value)} />
       <button type="submit" onClick={e => submitSearch(e)}>Search</button>
     </form>
-  )
+  );
 }

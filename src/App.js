@@ -1,10 +1,9 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { HomePage } from './pages/Home/Home.js';
 import { DetailedPage } from './pages/Detailed/Detailed';
 import './App.css';
 import { useEffect, useState } from 'react';
-import { data } from './data/data';
-import { NavBar } from './components/NavBar';
+import { NavBar } from './components/Navbar/NavBar.js';
 import { apiCall } from './apiCalls';
 
 function App() {
@@ -12,13 +11,13 @@ function App() {
   const [keyword, setKeyword] = useState('tech');
 
   const getArticles = async () => {
-    // const call = await apiCall(keyword);
-    setArticles(data.articles);
+    const call = await apiCall(keyword);
+    setArticles(call.articles);
   }
 
   useEffect(() => {
     getArticles();
-  }, [keyword])
+  }, [keyword]);
 
   return (
     <main>
