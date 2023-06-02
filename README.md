@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Tech Landing
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract:
+[//]: <>
 
-## Available Scripts
+Tech Landing is a sitet that consolidates different news sites into one. Using the [NewsApi](https://newsapi.org/), it displays all popular tech-related news articles. A user can also search for different topics and get relevant articles.
 
-In the project directory, you can run:
+## Built With: 
+[//]: <>
 
-### `npm start`
+React.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contributors:
+[//]: <>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Kass Daniello](https://github.com/Zertroz) 
 
-### `npm test`
+[//]: <>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation Instructions:
+[//]: <>
 
-### `npm run build`
+1. Clone down this repo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies by using ‘npm install’ in your terminal within the root directory.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. To host website on your local machine, run ’npm start’ in terminal.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application!
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Preview of App:
+![Homepage](https://user-images.githubusercontent.com/116397118/242930917-5b3c4667-97b5-4157-811e-3c12ee5adf34.png)
+![Detailpage](https://user-images.githubusercontent.com/116397118/242930926-4f35646c-c90f-499c-8333-afe8e1652501.png)
+![Mobile view](https://user-images.githubusercontent.com/116397118/242930939-93796a68-c967-4e05-a097-4dae3cdcc96d.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Wireframe Screenshot: 
+![Wireframe](https://user-images.githubusercontent.com/116397118/242930963-c1f75ace-ba36-4d55-8d82-aad2548de54d.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Context:
+[//]: <>
 
-## Learn More
+This project was a simulation of a take-home challenge for interview practice, done during the final mod at Turing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Learning Goals:
+[//]: <>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Get practice with take-home challenges
+- Build a functional app in a short time
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Feature Ideas:
+[//]: <>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Bug fixing
+- Multiple pages of results
+- More complete content pages
