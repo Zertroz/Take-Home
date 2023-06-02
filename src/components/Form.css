@@ -1,0 +1,7 @@
+input, button{
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  margin-left: .5em;
+  margin-right: .5em;
+}

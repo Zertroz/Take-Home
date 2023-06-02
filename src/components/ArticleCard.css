@@ -12,3 +12,15 @@
   object-fit: contain;
   margin: 1em;
 }
+
+@media screen and (max-width: 45em) {
+  .article-card {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid grey;
+  }
+
+  .desc {
+    display: none;
+  }
+}
