@@ -9,8 +9,8 @@ export const ArticleCard = ({title, description, date, image}) => {
         <img src={image} />
         <div>
           <h2>{title}</h2>
-          <p>{description}</p>
-          <p>{date}</p>
+          <p className='desc'>{description}</p>
+          <p className='desc'>{date}</p>
         </div>
     </Link>
   )

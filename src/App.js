@@ -1,6 +1,6 @@
 import { Route, Switch } from 'react-router-dom';
-import { HomePage } from './pages/Home';
-import { DetailedPage } from './pages/Detailed';
+import { HomePage } from './pages/Home/Home.js';
+import { DetailedPage } from './pages/Detailed/Detailed';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { data } from './data/data';

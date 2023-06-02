@@ -1,4 +1,4 @@
-import { ArticleCard } from "../components/ArticleCard"
+import { ArticleCard } from '../../components/ArticleCard.js'
 import './Home.css'
 
 export const HomePage = ({articles}) => {

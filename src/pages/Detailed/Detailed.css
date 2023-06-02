@@ -1,0 +1,18 @@
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.attributions {
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+}
+
+.detail-page > img {
+  max-width: 80%;
+  max-height: 60%;
+}
