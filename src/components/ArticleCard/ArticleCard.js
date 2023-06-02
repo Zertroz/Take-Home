@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import './ArticleCard.css'
+import { Link } from 'react-router-dom';
+import './ArticleCard.css';
 
 export const ArticleCard = ({title, description, date, image}) => {
-  const link = title.slice(0, 30)
+  const link = title.slice(0, 30);
   
   return (
     <Link to={`/article/${link}`} className="article-card">
@@ -13,5 +13,5 @@ export const ArticleCard = ({title, description, date, image}) => {
           <p className='desc'>{date}</p>
         </div>
     </Link>
-  )
+  );
 }

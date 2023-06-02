@@ -1,8 +1,8 @@
-import './Detailed.css'
+import './Detailed.css';
 
 export const DetailedPage = ({title, articles}) => {
   if(articles.length) {
-    const selectedArticle = articles.find(article => article.title.includes(title))
+    const selectedArticle = articles.find(article => article.title.includes(title));
 
     return (
       <section className="detail-page">
@@ -17,8 +17,8 @@ export const DetailedPage = ({title, articles}) => {
         <p>{selectedArticle.content}</p>
         <a href={selectedArticle.url}>Read More...</a>
       </section>
-    )
+    );
   } else {
-    return (<p>Loading...</p>)
+    return (<p>Loading...</p>);
   }
 }

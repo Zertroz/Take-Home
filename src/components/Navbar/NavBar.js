@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import { Form } from "./Form"
-import './NavBar.css'
+import { Link } from "react-router-dom";
+import { Form } from "../Form/Form";
+import './NavBar.css';
 
 export const NavBar = ({setKeyword}) => {
   return (
@@ -8,5 +8,5 @@ export const NavBar = ({setKeyword}) => {
         <Link to='/'><h1>Website Title</h1></Link>
         <Form setKeyword={setKeyword}/>
     </nav>
-  )
+  );
 }
